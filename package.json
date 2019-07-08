@@ -5,10 +5,10 @@
   "author": "JessicaSung",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public/",
+    "serve": "live-server public/ --no-browser",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
-    "dev": "webpack-dev-server",
+    "dev-server": "webpack-dev-server",
     "test": "jest --config=jest.config.json"
   },
   "dependencies": {
@@ -23,6 +23,7 @@
     "enzyme": "3.0.0",
     "enzyme-adapter-react-16": "1.0.0",
     "enzyme-to-json": "3.0.1",
+    "extract-text-webpack-plugin": "3.0.0",
     "jest": "20.0.4",
     "live-server": "^1.2.0",
     "moment": "2.18.1",
